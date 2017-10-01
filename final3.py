@@ -22,7 +22,7 @@ def handle(msg):
     if content_type == 'text':
         bot.sendMessage(chat_id, scrap())
 
-TOKEN = '429145952:AAFTuqbZQlnsS6TbmtKvbWwxYbxDp59GkLw'
+TOKEN = 'WHATEVER BOT FATHER SAYS'
 
 bot = telepot.Bot(TOKEN)
 MessageLoop(bot, handle).run_as_thread()
