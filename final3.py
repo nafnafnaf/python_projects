@@ -4,7 +4,7 @@ from urllib.request import urlopen, Request #as uReq
 from bs4 import BeautifulSoup as soup
 #BeautifulSoup + Wikiquote part
 def scrap():
-    url = 'http://www.meteokav.gr/weather/'
+    url = 'URL/'
     req = urlopen(url)
     page = req.read()
     req.close()
