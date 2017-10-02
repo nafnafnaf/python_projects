@@ -4,7 +4,7 @@ from urllib.request import urlopen, Request #as uReq
 from bs4 import BeautifulSoup as soup
 #BeautifulSoup + Wikiquote part
 def scrap():
-    url = 'http://www.meteokav.gr/weather/'
+    url = 'http://URL/'
     req = urlopen(url)
     page = req.read()
     req.close()
@@ -24,7 +24,7 @@ def handle(msg):
     if content_type == 'text':
         bot.sendMessage(chat_id, scrap())
 
-TOKEN = '429145952:AAFTuqbZQlnsS6TbmtKvbWwxYbxDp59GkLw'
+TOKEN = 'TOKEN'
 
 bot = telepot.Bot(TOKEN)
 MessageLoop(bot, handle).run_as_thread()
